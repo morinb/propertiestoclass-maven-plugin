@@ -16,7 +16,7 @@ Here is an example of a configuration :
 <plugin>
     <groupId>com.github.morinb.maven</groupId>
     <artifactId>propertiestoclass-maven-plugin</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <configuration>
         <constantPrefix>PROP_</constantPrefix>
         <outputPackage>com.github.morinb.maven.generated</outputPackage>
@@ -34,4 +34,16 @@ Here is an example of a configuration :
         </execution>
     </executions>
 </plugin>
+----
+
+With the following repository :
+
+[source,xml]
+----
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
 ----
