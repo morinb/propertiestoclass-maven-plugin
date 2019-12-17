@@ -3,6 +3,7 @@
 propertiestoclass-maven-plugin provides a Java class generator for properties files.
 
 image:https://travis-ci.com/morinb/propertiestoclass-maven-plugin.svg?branch=master["Build Status", link="https://travis-ci.com/morinb/propertiestoclass-maven-plugin"]
+image:https://jitpack.io/v/morinb/propertiestoclass-maven-plugin.svg["JitPack Version", link="https://jitpack.io/#morinb/propertiestoclass-maven-plugin"]
 
 The supported goal is :
 
