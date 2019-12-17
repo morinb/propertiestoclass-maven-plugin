@@ -1,0 +1,9 @@
+#* @implicitly included *#
+#* @vtlvariable name="propertiesFile" type="java.lang.String" file="../resources/velocity/JavaClass.vm" *#
+#* @vtlvariable name="packageName" type="java.lang.String" file="../resources/velocity/JavaClass.vm" *#
+#* @vtlvariable name="displayGenerated" type="boolean" file="../resources/velocity/JavaClass.vm" *#
+#* @vtlvariable name="lowerJdk11" type="boolean" file="../resources/velocity/JavaClass.vm" *#
+#* @vtlvariable name="dateString" type="java.lang.String" file="../resources/velocity/JavaClass.vm" *#
+#* @vtlvariable name="className" type="java.lang.String" file="../resources/velocity/JavaClass.vm" *#
+#* @vtlvariable name="fields" type="java.util.Collection<com.github.morinb.maven.mapper.impl.Field>" file="../resources/velocity/JavaClass.vm" *#
+#* @vtlvariable name="prefix" type="java.lang.String" file="../resources/velocity/JavaClass.vm" *#

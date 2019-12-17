@@ -1,0 +1,24 @@
+##@formatter:off
+package $packageName;
+
+/**
+* Properties from file $propertiesFile.
+*/
+#if($displayGenerated)
+#if($lowerJdk11)
+@javax.annotation.Generated(value = "PropertiesToClass Maven Plugin", date = "$dateString")
+#else
+@javax.annotation.processing.Generated(value="PropertiesToClass Maven Plugin", date="$dateString")
+#end
+#end
+public class $className {
+#if($fields)
+#foreach( $field in $fields)
+    /**
+    * Key : $field.getKey()
+    */
+    public static $field.getType() $prefix$field.getName() = $field.getValue();
+#end
+#end
+}
+##@formatter:on

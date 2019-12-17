@@ -1,0 +1,34 @@
+= propertiestoclass-maven-plugin
+
+propertiestoclass-maven-plugin provides a Java class generator for properties files.
+
+The supported goal is :
+
+    p2c - process specified properties file to generate Java classes.
+
+Here is an example of a configuration :
+
+[source,xml]
+----
+<plugin>
+    <groupId>com.github.morinb.maven</groupId>
+    <artifactId>propertiestoclass-maven-plugin</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <configuration>
+        <constantPrefix>PROP_</constantPrefix>
+        <outputPackage>com.github.morinb.maven.generated</outputPackage>
+        <propertiesFiles>
+            <propertiesFile>/src/main/resources/test.properties</propertiesFile>
+        </propertiesFiles>
+    </configuration>
+    <executions>
+        <execution>
+            <id>p2c</id>
+            <phase>generate-sources</phase>
+            <goals>
+                <goal>p2c</goal>
+            </goals>
+        </execution>
+    </executions>
+</plugin>
+----
