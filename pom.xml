@@ -20,7 +20,7 @@
 
     <groupId>com.github.morinb.maven</groupId>
     <artifactId>propertiestoclass-maven-plugin</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.2</version>
     <packaging>maven-plugin</packaging>
 
     <name>Properties to Class Maven Plugin</name>
