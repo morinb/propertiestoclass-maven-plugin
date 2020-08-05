@@ -40,10 +40,10 @@ With the following repository :
 
 [source,xml]
 ----
-<repositories>
-    <repository>
+<pluginRepositories>
+    <pluginRepository>
         <id>jitpack.io</id>
         <url>https://jitpack.io</url>
-    </repository>
-</repositories>
+    </pluginRepository>
+</pluginRepositories>
 ----
