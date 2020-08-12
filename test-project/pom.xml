@@ -34,12 +34,12 @@
             <plugin>
                 <groupId>com.github.morinb.maven</groupId>
                 <artifactId>propertiestoclass-maven-plugin</artifactId>
-                <version>0.0.1-SNAPSHOT</version>
+                <version>0.0.3-SNAPSHOT</version>
                 <configuration>
                     <constantPrefix>PROP_</constantPrefix>
                     <outputPackage>com.github.morinb.maven.generated</outputPackage>
                     <propertiesFiles>
-                        <propertiesFile>/src/main/resources/test.properties</propertiesFile>
+                        <propertiesFile>src/main/resources/test.properties</propertiesFile>
                     </propertiesFiles>
                 </configuration>
                 <executions>

@@ -30,6 +30,7 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
+import java.util.regex.Matcher;
 import org.apache.maven.plugin.logging.Log;
 import org.apache.maven.project.MavenProject;
 import org.apache.velocity.Template;
@@ -49,7 +50,6 @@ public class PropertiesToClassMapper implements ToClassMapper {
     @Override
     public void mapToClass(File propertiesFile, String outputPackage, boolean generateValueValues, boolean displayGeneratedAnnotation, String constantPrefix, MavenProject project, Log log) throws IOException {
         Properties prop = new Properties();
-        final File file = new File(project.getBasedir() + propertiesFile.getPath());
         final VelocityContext vContext = new VelocityContext();
         vContext.put("packageName", outputPackage);
         vContext.put("dateString", LocalDateTime.now().toString());
@@ -76,7 +76,7 @@ public class PropertiesToClassMapper implements ToClassMapper {
             throw new IOException("Creation of " + generatedPackageDirectory.getAbsolutePath() + " impossible.");
         }
 
-        prop.load(new FileInputStream(file));
+        prop.load(new FileInputStream(propertiesFile));
         List<Field> fields = new ArrayList<>();
         for (String key : prop.stringPropertyNames()) {
             if (generateValueValues) {
@@ -115,7 +115,7 @@ public class PropertiesToClassMapper implements ToClassMapper {
     }
 
     private String formatPackageToFolder(String outputPackage) {
-        return outputPackage.replaceAll("\\.", File.separator);
+        return outputPackage.replaceAll("\\.", Matcher.quoteReplacement(File.separator));
     }
 
 }
