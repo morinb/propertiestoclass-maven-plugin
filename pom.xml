@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  ~ Copyright 2019 Baptiste MORIN
+  ~ Copyright 2020 Baptiste MORIN
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -15,7 +15,8 @@
   ~ limitations under the License.
   -->
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.github.morinb.maven</groupId>
@@ -29,6 +30,32 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.version>3.6.0</maven.version>
     </properties>
+
+    <licenses>
+        <license>
+            <name>Apache V2</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <description>Maven plugin to convert properties files into Java classes</description>
+
+    <url>https://github.com/morinb/propertiestoclass-maven-plugin</url>
+
+    <developers>
+        <developer>
+            <name>Baptiste MORIN</name>
+            <email>morin.baptiste@gmail.com</email>
+            <organization>propertiestoclass</organization>
+            <organizationUrl>https://github.com/morinb/propertiestoclass-maven-plugin</organizationUrl>
+            <timezone>UTC+1</timezone>
+        </developer>
+    </developers>
+
+    <organization>
+        <url>https://github.com/morinb/propertiestoclass-maven-plugin</url>
+        <name>propertiestoclass</name>
+    </organization>
 
     <dependencies>
 
