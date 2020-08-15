@@ -1,7 +1,7 @@
 = propertiestoclass-maven-plugin
 
 propertiestoclass-maven-plugin provides a Java class generator for properties files.
-
+image:https://img.shields.io/maven-central/v/com.github.morinb.maven/propertiestoclass-maven-plugin?style=plastic["Maven Central Version", link="https://search.maven.org/artifact/com.github.morinb.maven/propertiestoclass-maven-plugin"]
 image:https://travis-ci.com/morinb/propertiestoclass-maven-plugin.svg?branch=master["Build Status", link="https://travis-ci.com/morinb/propertiestoclass-maven-plugin"]
 image:https://jitpack.io/v/morinb/propertiestoclass-maven-plugin.svg["JitPack Version", link="https://jitpack.io/#morinb/propertiestoclass-maven-plugin"]
 
@@ -21,7 +21,7 @@ Here is an example of a configuration :
         <constantPrefix>PROP_</constantPrefix>
         <outputPackage>com.github.morinb.maven.generated</outputPackage>
         <propertiesFiles>
-            <propertiesFile>/src/main/resources/test.properties</propertiesFile>
+            <propertiesFile>src/main/resources/test.properties</propertiesFile>
         </propertiesFiles>
     </configuration>
     <executions>
@@ -36,14 +36,3 @@ Here is an example of a configuration :
 </plugin>
 ----
 
-With the following repository :
-
-[source,xml]
-----
-<pluginRepositories>
-    <pluginRepository>
-        <id>jitpack.io</id>
-        <url>https://jitpack.io</url>
-    </pluginRepository>
-</pluginRepositories>
-----
