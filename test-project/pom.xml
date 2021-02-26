@@ -34,7 +34,7 @@
             <plugin>
                 <groupId>com.github.morinb.maven</groupId>
                 <artifactId>propertiestoclass-maven-plugin</artifactId>
-                <version>0.0.4-SNAPSHOT</version>
+                <version>0.0.7-SNAPSHOT</version>
                 <configuration>
                     <constantPrefix>PROP_</constantPrefix>
                     <outputPackage>com.github.morinb.maven.generated</outputPackage>
